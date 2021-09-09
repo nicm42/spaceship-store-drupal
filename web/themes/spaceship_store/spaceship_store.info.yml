@@ -1,0 +1,5 @@
+name: Spaceship Store
+type: theme
+description: We sell spaceships
+core_version_requirement: ^8 || ^9
+base theme: classy
