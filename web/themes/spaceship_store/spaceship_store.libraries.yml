@@ -1,3 +1,9 @@
+styling:
+  version: 1.0
+  css:
+    theme:
+      css/global.css: {}
+
 fonts:
   css:
     theme:

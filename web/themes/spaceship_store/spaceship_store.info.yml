@@ -12,5 +12,6 @@ regions:
   front: Front Page Blocks
 
 libraries:
+  - spaceship_store/styling
   - spaceship_store/fonts
   - core/normalize
