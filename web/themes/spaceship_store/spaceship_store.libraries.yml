@@ -3,6 +3,7 @@ styling:
   css:
     theme:
       css/global.css: {}
+      css/ships.css: {}
 
 fonts:
   css:
