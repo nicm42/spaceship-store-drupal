@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d15d298b7c0ff19f54708ed294f5b2df",
+    "content-hash": "205e902c296cb22549b93a5ca588a0ac",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2648,55 +2648,6 @@
             }
         },
         {
-            "name": "drupal/slick_extras",
-            "version": "1.0.0-rc4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick_extras.git",
-                "reference": "8.x-1.0-rc4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_extras-8.x-1.0-rc4.zip",
-                "reference": "8.x-1.0-rc4",
-                "shasum": "908ea70bd8dc22bf35ea53353464414a42ade35b"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/slick": "*"
-            },
-            "require-dev": {
-                "drupal/slick": "*",
-                "drupal/slick_views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-rc4",
-                    "datestamp": "1618671310",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick carousel extras.",
-            "homepage": "https://www.drupal.org/project/slick_extras",
-            "support": {
-                "source": "https://git.drupalcode.org/project/slick_extras"
-            }
-        },
-        {
             "name": "drupal/slick_views",
             "version": "2.4.0",
             "source": {
@@ -2746,69 +2697,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views",
                 "issues": "https://drupal.org/project/issues/slick_views"
-            }
-        },
-        {
-            "name": "drupal/views_slideshow",
-            "version": "4.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_slideshow.git",
-                "reference": "8.x-4.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_slideshow-8.x-4.8.zip",
-                "reference": "8.x-4.8",
-                "shasum": "88104843df5e2eaa7e70b796a80573d844583e42"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-4.8",
-                    "datestamp": "1601309285",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "NickDickinsonWilde",
-                    "homepage": "https://www.drupal.org/user/3094661"
-                },
-                {
-                    "name": "aaron",
-                    "homepage": "https://www.drupal.org/user/33420"
-                },
-                {
-                    "name": "redndahead",
-                    "homepage": "https://www.drupal.org/user/160320"
-                },
-                {
-                    "name": "vbouchet",
-                    "homepage": "https://www.drupal.org/user/1671428"
-                }
-            ],
-            "description": "Describes relationships between entities.",
-            "homepage": "https://www.drupal.org/project/views_slideshow",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_slideshow",
-                "issues": "https://www.drupal.org/project/issues/views_slideshow",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -7467,8 +7355,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/libraries": 20,
-        "drupal/slick_extras": 5
+        "drupal/libraries": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
