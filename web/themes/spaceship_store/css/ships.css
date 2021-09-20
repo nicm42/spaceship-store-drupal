@@ -1,5 +1,19 @@
-.ship-row {
+.view-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Images are sized to 250px in Drupal */
+  grid-template-columns: repeat(3, minmax(250px, max-content));
   gap: 1em;
+}
+
+/* Make all titles bigger */
+.views-field-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Make all the images take up 250px in height so the text always starts at the same place */
+.views-field-field-image {
+  display: grid;
+  place-content: center;
+  height: 250px;
 }
