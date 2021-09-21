@@ -1,8 +1,9 @@
 .view-content {
+  --image-size: 250px; /* set in Drupal */
   display: grid;
   /* Images are sized to 250px in Drupal */
-  grid-template-columns: repeat(3, minmax(250px, max-content));
-  gap: 1em;
+  grid-template-columns: repeat(3, minmax(var(--image-size), max-content));
+  gap: 2em;
 }
 
 /* Make all titles bigger */
@@ -15,5 +16,5 @@
 .views-field-field-image {
   display: grid;
   place-content: center;
-  height: 250px;
+  height: var(--image-size);
 }
