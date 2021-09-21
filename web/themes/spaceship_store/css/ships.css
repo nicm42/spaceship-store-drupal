@@ -1,9 +1,15 @@
 .view-content {
   --image-size: 250px; /* set in Drupal */
   display: grid;
-  /* Images are sized to 250px in Drupal */
   grid-template-columns: 1fr;
-  gap: 2em;
+  gap: 1em;
+}
+
+/* each grid item */
+.view-content > div {
+  padding: 1em;
+  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
 }
 
 /* Make all titles bigger */
@@ -34,7 +40,7 @@
   margin-top: 0.5em;
   padding: 0.25em 0.5em;
   background-color: var(--link-colour);
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
