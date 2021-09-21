@@ -7,7 +7,10 @@
 
 /* each grid item */
 .view-content > div {
-  padding: 1em;
+  /* Using flex so the read mores are all at the bottom of the cards */
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
   background-color: var(--background-colour);
   border-radius: var(--border-radius);
 }
@@ -26,18 +29,13 @@
   height: var(--image-size);
 }
 
-/* Read more link */
-.views-field-view-node a,
-.views-field-view-node a:visited,
-.views-field-view-node a:hover,
-.views-field-view-node a:focus {
-  color: var(--text-colour);
-  font-size: 0.85rem;
-  text-decoration: none;
+/* Read more button */
+.views-field-view-node {
+  margin-top: auto;
 }
 
 .views-field-view-node .field-content {
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   padding: 0.25em 0.5em;
   background-color: var(--link-colour);
   border-radius: var(--border-radius);
@@ -47,6 +45,16 @@
 .views-field-view-node .field-content:hover,
 .views-field-view-node .field-content:focus {
   background-color: var(--link-colour-focus);
+}
+
+/* Read more link */
+.views-field-view-node a,
+.views-field-view-node a:visited,
+.views-field-view-node a:hover,
+.views-field-view-node a:focus {
+  color: var(--text-colour);
+  font-size: 0.85rem;
+  text-decoration: none;
 }
 
 /* The grid at difference sizes - all in px because the images are sized in px */
