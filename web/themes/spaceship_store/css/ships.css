@@ -2,7 +2,7 @@
   --image-size: 250px; /* set in Drupal */
   display: grid;
   /* Images are sized to 250px in Drupal */
-  grid-template-columns: repeat(3, minmax(var(--image-size), max-content));
+  grid-template-columns: 1fr;
   gap: 2em;
 }
 
@@ -41,4 +41,23 @@
 .views-field-view-node .field-content:hover,
 .views-field-view-node .field-content:focus {
   background-color: var(--link-colour-focus);
+}
+
+/* The grid at difference sizes - all in px because the images are sized in px */
+@media all and (min-width: 550px) {
+  .view-content {
+    grid-template-columns: repeat(2, minmax(var(--image-size), max-content));
+  }
+}
+
+@media all and (min-width: 800px) {
+  .view-content {
+    grid-template-columns: repeat(3, minmax(var(--image-size), max-content));
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .view-content {
+    grid-template-columns: repeat(6, minmax(var(--image-size), max-content));
+  }
 }
