@@ -1,14 +1,20 @@
+:root {
+  --text-colour: #fff;
+  --link-colour: #17a2b8;
+  --link-colour-focus: #138496;
+}
+
 body {
   font-family: 'Chakra Petch', sans-serif;
   background-color: #343a40;
-  color: #fff;
+  color: var(--text-colour);
 }
 
 a {
-  color: #17a2b8;
+  color: var(--link-colour);
 }
 
 a:hover,
 a:focus {
-  color: #0f6674;
+  color: var(--link-colour-focus);
 }
