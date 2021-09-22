@@ -1,4 +1,4 @@
-.view-content {
+.view-ships .view-content {
   --image-size: 250px; /* set in Drupal */
   display: grid;
   grid-template-columns: 1fr;
@@ -6,7 +6,7 @@
 }
 
 /* each grid item */
-.ships {
+.view-ships .ships {
   /* Using flex so the read mores are all at the bottom of the cards */
   display: flex;
   flex-direction: column;
@@ -16,25 +16,25 @@
 }
 
 /* Make all titles bigger */
-.views-field-title {
+.view-ships .views-field-title {
   margin-bottom: 0.5em;
   font-size: 1.5rem;
   text-align: center;
 }
 
 /* Make all the images take up 250px in height so the text always starts at the same place */
-.views-field-field-image {
+.view-ships .views-field-field-image {
   display: grid;
   place-content: center;
   height: var(--image-size);
 }
 
 /* Read more button */
-.views-field-view-node {
+.view-ships .views-field-view-node {
   margin-top: auto;
 }
 
-.views-field-view-node .field-content {
+.view-ships .views-field-view-node .field-content {
   margin-top: 0.25em;
   padding: 0.25em 0.5em;
   background-color: var(--link-colour);
@@ -42,16 +42,16 @@
   cursor: pointer;
 }
 
-.views-field-view-node .field-content:hover,
-.views-field-view-node .field-content:focus {
+.view-ships .views-field-view-node .field-content:hover,
+.view-ships .views-field-view-node .field-content:focus {
   background-color: var(--link-colour-focus);
 }
 
 /* Read more link */
-.views-field-view-node a,
-.views-field-view-node a:visited,
-.views-field-view-node a:hover,
-.views-field-view-node a:focus {
+.view-ships .views-field-view-node a,
+.view-ships .views-field-view-node a:visited,
+.view-ships .views-field-view-node a:hover,
+.view-ships .views-field-view-node a:focus {
   color: var(--text-colour);
   font-size: 0.85rem;
   text-decoration: none;
@@ -59,19 +59,19 @@
 
 /* The grid at difference sizes - all in px because the images are sized in px */
 @media all and (min-width: 550px) {
-  .view-content {
+  .view-ships .view-content {
     grid-template-columns: repeat(2, minmax(var(--image-size), max-content));
   }
 }
 
 @media all and (min-width: 800px) {
-  .view-content {
+  .view-ships .view-content {
     grid-template-columns: repeat(3, minmax(var(--image-size), max-content));
   }
 }
 
 @media all and (min-width: 1600px) {
-  .view-content {
+  .view-ships .view-content {
     grid-template-columns: repeat(6, minmax(var(--image-size), max-content));
   }
 }
