@@ -4,6 +4,7 @@ styling:
     theme:
       css/global.css: {}
       css/ships.css: {}
+      css/about.css: {}
 
 fonts:
   css:
