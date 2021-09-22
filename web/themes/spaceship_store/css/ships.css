@@ -6,7 +6,7 @@
 }
 
 /* each grid item */
-.view-content > div {
+.ships {
   /* Using flex so the read mores are all at the bottom of the cards */
   display: flex;
   flex-direction: column;
