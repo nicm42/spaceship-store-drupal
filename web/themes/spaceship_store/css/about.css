@@ -1,9 +1,35 @@
-/*  background-color: var(--background-colour);
-  border-radius: var(--border-radius);
+/* Put all of these into one line */
+.path-about .region-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    'title title title'
+    'info info email';
+  gap: 1em;
   padding: var(--padding);
-*/
+  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
+}
 
-.path-about .view-about .views-field-title {
+.path-about .view-content {
+  display: flex;
+  gap: 1em;
+}
+
+.path-about .block-page-title-block {
+  grid-area: title;
+}
+
+.path-about .block-system-main-block {
+  grid-area: info;
+}
+
+.path-about .contact-message-form {
+  grid-area: email;
+}
+
+.path-about .views-field-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
