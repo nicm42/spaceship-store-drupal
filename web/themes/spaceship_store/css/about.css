@@ -1,16 +1,15 @@
 /*  background-color: var(--background-colour);
   border-radius: var(--border-radius);
   padding: var(--padding);
-.path-about
 */
 
-.view-about .views-field-title {
+.path-about .view-about .views-field-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 /* Catalogue button */
-#edit-submit {
+.path-about #edit-submit {
   margin-top: 0.25em;
   padding: 0.25em 0.5em;
   background-color: var(--link-colour);
@@ -20,18 +19,18 @@
   cursor: pointer;
 }
 
-#edit-submit:hover,
-#edit-submit:focus {
+.path-about #edit-submit:hover,
+.path-about #edit-submit:focus {
   background-color: var(--link-colour-focus);
 }
 
 /* Put email text and input box on separate lines */
-.js-form-item {
+.path-about .js-form-item {
   display: flex;
   flex-direction: column;
 }
 
 /* Email input needs to have black text since it's a white background */
-.form-email {
+.path-about .form-email {
   color: #000;
 }
