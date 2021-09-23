@@ -3,8 +3,9 @@ styling:
   css:
     theme:
       css/global.css: {}
-      css/ships.css: {}
+      css/carousel.css: {}
       css/about.css: {}
+      css/ships.css: {}
 
 fonts:
   css:
