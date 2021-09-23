@@ -1,1 +1,8 @@
-/*.path-frontpage*/
+.path-frontpage .field--name-field-image {
+  object-fit: cover;
+}
+
+.path-frontpage .field--name-field-image img {
+  width: 95vw;
+  height: 80vh;
+}
