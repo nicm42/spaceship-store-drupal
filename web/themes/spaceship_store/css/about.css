@@ -1,3 +1,9 @@
+/*  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+.path-about
+*/
+
 .view-about .views-field-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -17,4 +23,15 @@
 #edit-submit:hover,
 #edit-submit:focus {
   background-color: var(--link-colour-focus);
+}
+
+/* Put email text and input box on separate lines */
+.js-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Email input needs to have black text since it's a white background */
+.form-email {
+  color: #000;
 }
