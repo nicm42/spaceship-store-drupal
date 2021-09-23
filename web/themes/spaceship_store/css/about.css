@@ -13,7 +13,8 @@
 }
 
 .path-about .view-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   gap: 1em;
 }
 
@@ -32,6 +33,10 @@
 .path-about .views-field-title {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.path-about h2 {
+  margin: 0; /* So the catalogue title is in line with the other titles */
 }
 
 /* Catalogue button */
@@ -56,7 +61,10 @@
   flex-direction: column;
 }
 
-/* Email input needs to have black text since it's a white background */
+/* Email input needs to have black text since it's a white background
+   and stop it from being so wide
+*/
 .path-about .form-email {
+  width: 20rem;
   color: #000;
 }
