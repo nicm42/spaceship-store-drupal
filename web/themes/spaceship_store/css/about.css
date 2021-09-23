@@ -1,21 +1,8 @@
 /* Put all of these into one line */
 .path-about .region-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:
-    'title title title'
-    'info info email';
-  gap: 1em;
   padding: var(--padding);
   background-color: var(--background-colour);
   border-radius: var(--border-radius);
-}
-
-.path-about .view-content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 1em;
 }
 
 .path-about .block-page-title-block {
@@ -65,6 +52,30 @@
    and stop it from being so wide
 */
 .path-about .form-email {
-  width: 20rem;
+  width: 12rem;
   color: #000;
+}
+
+@media all and (min-width: 650px) {
+  .path-about .view-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1em;
+  }
+
+  .path-about .form-email {
+    width: 20rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .path-about .region-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      'title title title'
+      'info info email';
+    gap: 1em;
+  }
 }
