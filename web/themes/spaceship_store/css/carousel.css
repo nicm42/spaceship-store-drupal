@@ -7,17 +7,26 @@
   height: 80vh;
 }
 
+/*
+  Make the read more link on carousels look like a button 
+  These are the links inside a paragraph tag
+  Strangely, there's also a link just before the title
+*/
 .path-frontpage .slick-arrow,
-.path-frontpage .slick__slide p {
+.path-frontpage .slick__slide p a {
   padding: 0.25em 0.5em;
   background-color: var(--link-colour);
   font-size: 0.85rem;
+  color: var(--text-colour);
   border: none;
   border-radius: var(--border-radius);
+  text-decoration: none;
   cursor: pointer;
 }
 
-.path-frontpage .slick-arrow,
-.path-frontpage .slick__slide p {
+.path-frontpage .slick-arrow:focus,
+.path-frontpage .slick-arrow:hover,
+.path-frontpage .slick__slide p a:focus,
+.path-frontpage .slick__slide p a:hover {
   background-color: var(--link-colour-focus);
 }
