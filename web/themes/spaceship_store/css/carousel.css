@@ -1,8 +1,23 @@
-.path-frontpage .field--name-field-image {
+.path-frontpage .slick-slide {
   object-fit: cover;
 }
 
-.path-frontpage .field--name-field-image img {
+.path-frontpage .slick-slide img {
   width: 95vw;
   height: 80vh;
+}
+
+.path-frontpage .slick-arrow,
+.path-frontpage .slick__slide p {
+  padding: 0.25em 0.5em;
+  background-color: var(--link-colour);
+  font-size: 0.85rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.path-frontpage .slick-arrow,
+.path-frontpage .slick__slide p {
+  background-color: var(--link-colour-focus);
 }
