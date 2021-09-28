@@ -1,3 +1,7 @@
+.path-frontpage .slick--view--news-carousel {
+  position: relative; /* So we can absolutely position arrows, dots and text */
+}
+
 .path-frontpage .slick-slide {
   object-fit: cover;
 }
@@ -49,4 +53,14 @@
 
 .path-frontpage .slick-dots .slick-active button {
   background-color: var(--text-colour);
+}
+
+/* Move the arrows to be on the left and right halfway down the carousel */
+.path-frontpage .slick-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.path-frontpage .slick-next {
+  right: 0;
 }
