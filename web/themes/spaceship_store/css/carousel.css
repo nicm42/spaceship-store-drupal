@@ -30,3 +30,23 @@
 .path-frontpage .slick__slide p a:hover {
   background-color: var(--link-colour-focus);
 }
+
+/* The dots that tell us which side we're on (and allow clicking on that slide) */
+.path-frontpage .slick-dots {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Make the buttons look like dots */
+.path-frontpage .slick-dots li button {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid var(--text-colour);
+  border-radius: 50%;
+}
+
+.path-frontpage .slick-dots .slick-active button {
+  background-color: var(--text-colour);
+}
