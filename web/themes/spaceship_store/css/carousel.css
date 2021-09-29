@@ -2,13 +2,32 @@
   position: relative; /* So we can absolutely position arrows, dots and text */
 }
 
+/* Make all images the same size */
 .path-frontpage .slick-slide {
+  position: relative;
   object-fit: cover;
 }
 
 .path-frontpage .slick-slide img {
   width: 95vw;
   height: 80vh;
+}
+
+/* Move the text to be on the carousel and centred */
+.path-frontpage .slick__slide h2,
+.path-frontpage .slick__slide p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.path-frontpage .slick__slide h2 {
+  bottom: 3em;
+}
+
+.path-frontpage .slick__slide p {
+  bottom: 2.5em;
 }
 
 /*
@@ -39,8 +58,10 @@
 .path-frontpage .slick-dots {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 0;
+  right: 0;
   padding-left: 0;
+  text-align: center;
   list-style-type: none;
 }
 
