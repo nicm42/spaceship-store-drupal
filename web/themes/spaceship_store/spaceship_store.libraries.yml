@@ -3,6 +3,7 @@ styling:
   css:
     theme:
       css/global.css: {}
+      css/nav.css: {}
       css/carousel.css: {}
       css/about.css: {}
       css/ships.css: {}
