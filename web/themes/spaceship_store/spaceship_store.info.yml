@@ -6,7 +6,6 @@ base theme: classy
 
 regions:
   header: Header
-  primary_menu: 'Primary menu'
   highlighted: Highlighted
   content: Content
   front: Front Page Blocks
