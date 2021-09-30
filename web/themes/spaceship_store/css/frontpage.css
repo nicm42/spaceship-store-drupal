@@ -1,0 +1,15 @@
+.path-frontpage .block-system-main-block {
+  padding: var(--padding);
+  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.path-frontpage .block-system-main-block p:first-of-type {
+  font-size: 1.5em;
+}
+
+/* Hide RSS feed icon */
+.path-frontpage .feed-icons {
+  display: none;
+}
