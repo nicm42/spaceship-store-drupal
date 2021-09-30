@@ -8,6 +8,14 @@
   object-fit: cover;
 }
 
+/* Darken carousel image so the text is more readable */
+.path-frontpage .slick-slide::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .path-frontpage .slick-slide img {
   width: 95vw;
   height: 80vh;
@@ -20,6 +28,7 @@
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .path-frontpage .slick__slide h2 {
