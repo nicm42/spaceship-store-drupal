@@ -1,6 +1,10 @@
 .path-frontpage .block-system-main-block {
+  margin-bottom: var(--padding);
   padding: var(--padding);
   background-color: var(--background-colour);
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: var(--border-radius);
   text-align: center;
 }
