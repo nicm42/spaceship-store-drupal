@@ -8,6 +8,7 @@ styling:
       css/carousel.css: {}
       css/about.css: {}
       css/ships.css: {}
+      css/ship-page.css: {}
 
 fonts:
   css:
