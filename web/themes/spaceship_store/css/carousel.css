@@ -1,0 +1,104 @@
+.path-frontpage .slick--view--news-carousel {
+  position: relative; /* So we can absolutely position arrows, dots and text */
+}
+
+/* Make all images the same size */
+.path-frontpage .slick-slide {
+  position: relative;
+  object-fit: cover;
+}
+
+/* Darken carousel image so the text is more readable */
+.path-frontpage .slick-slide::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.path-frontpage .slick-slide img {
+  width: 95vw;
+  height: 80vh;
+}
+
+/* Move the text to be on the carousel and centred */
+.path-frontpage .slick__slide h2,
+.path-frontpage .slick__slide p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.path-frontpage .slick__slide h2 {
+  bottom: 3em;
+}
+
+.path-frontpage .slick__slide p {
+  bottom: 2.5em;
+}
+
+/*
+  Make the read more link on carousels look like a button 
+  These are the links inside a paragraph tag
+  Strangely, there's also a link just before the title
+*/
+.path-frontpage .slick-arrow,
+.path-frontpage .slick__slide p a {
+  padding: 0.25em 0.5em;
+  background-color: var(--link-colour);
+  font-size: 0.85rem;
+  color: var(--text-colour);
+  border: none;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.path-frontpage .slick-arrow:focus,
+.path-frontpage .slick-arrow:hover,
+.path-frontpage .slick__slide p a:focus,
+.path-frontpage .slick__slide p a:hover {
+  background-color: var(--link-colour-focus);
+}
+
+/* The dots that tell us which side we're on (and allow clicking on that slide) */
+.path-frontpage .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+/* Make the buttons look like dots */
+.path-frontpage .slick-dots li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.path-frontpage .slick-dots li button {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid var(--text-colour);
+  border-radius: 50%;
+}
+
+.path-frontpage .slick-dots .slick-active button {
+  background-color: var(--text-colour);
+}
+
+/* Move the arrows to be on the left and right halfway down the carousel */
+.path-frontpage .slick-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.path-frontpage .slick-next {
+  right: 0;
+}

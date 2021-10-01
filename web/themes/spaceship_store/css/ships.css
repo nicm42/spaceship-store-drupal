@@ -1,0 +1,78 @@
+.path-ships .view-content {
+  --image-size: 250px; /* set in Drupal */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+/* each grid item */
+.path-ships .ships {
+  /* Using flex so the read mores are all at the bottom of the cards */
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
+}
+
+/* Make all titles bigger */
+.path-ships .views-field-title {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Make all the images take up 250px in height so the text always starts at the same place */
+.path-ships .views-field-field-image {
+  display: grid;
+  place-content: center;
+  height: var(--image-size);
+}
+
+/* Read more button */
+.path-ships .views-field-view-node {
+  margin-top: auto;
+}
+
+.path-ships .views-field-view-node .field-content {
+  margin-top: 0.25em;
+  padding: 0.25em 0.5em;
+  background-color: var(--link-colour);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.path-ships .views-field-view-node .field-content:hover,
+.path-ships .views-field-view-node .field-content:focus {
+  background-color: var(--link-colour-focus);
+}
+
+/* Read more link */
+.path-ships .views-field-view-node a,
+.path-ships .views-field-view-node a:visited,
+.path-ships .views-field-view-node a:hover,
+.path-ships .views-field-view-node a:focus {
+  color: var(--text-colour);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+/* The grid at difference sizes - all in px because the images are sized in px */
+@media all and (min-width: 550px) {
+  .path-ships .view-content {
+    grid-template-columns: repeat(2, minmax(var(--image-size), max-content));
+  }
+}
+
+@media all and (min-width: 800px) {
+  .path-ships .view-content {
+    grid-template-columns: repeat(3, minmax(var(--image-size), max-content));
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .path-ships .view-content {
+    grid-template-columns: repeat(6, minmax(var(--image-size), max-content));
+  }
+}

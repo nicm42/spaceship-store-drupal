@@ -1,0 +1,16 @@
+name: Spaceship Store
+type: theme
+description: We sell spaceships
+core_version_requirement: ^8 || ^9
+base theme: classy
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  content: Content
+  front: Front Page Blocks
+
+libraries:
+  - spaceship_store/styling
+  - spaceship_store/fonts
+  - core/normalize

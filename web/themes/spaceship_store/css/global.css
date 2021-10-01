@@ -1,0 +1,54 @@
+:root {
+  --text-colour: #fff;
+  --background-colour: rgba(52, 58, 64, 0.9);
+  --link-colour: #17a2b8;
+  --link-colour-focus: #138496;
+  --border-radius: 0.25em;
+  --padding: 1em;
+}
+
+html {
+  /* To get rid of grey background at the bottom on Chrome */
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-colour);
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--text-colour);
+}
+
+main {
+  width: calc(100% - (var(--padding)) * 4);
+  margin-left: var(--padding);
+  padding: var(--padding);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: var(--border-radius);
+}
+
+a {
+  color: var(--link-colour);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-colour-focus);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Turn off floats */
+.align-left {
+  float: unset;
+}

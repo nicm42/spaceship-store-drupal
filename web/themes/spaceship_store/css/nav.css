@@ -1,0 +1,39 @@
+.region-header {
+  display: flex;
+  align-items: center;
+  padding-block: 1em;
+  margin-bottom: 1em;
+  background-color: var(--background-colour);
+}
+
+.block-system-branding-block {
+  margin-left: var(--padding);
+  /* For some reason this is 46px high, so we'll tell it to be the same height as the image */
+  height: 40px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  margin-left: 0; /* Override default margin */
+}
+
+.menu-item {
+  display: inline;
+  margin-left: 2em;
+}
+
+.menu-item a {
+  color: #7e8286;
+  text-decoration: none;
+}
+
+/* Third line is different to override default */
+.menu-item a:focus,
+.menu-item a:hover,
+ul.menu a.is-active {
+  color: var(--text-colour);
+}

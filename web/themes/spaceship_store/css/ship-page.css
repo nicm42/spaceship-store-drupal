@@ -1,0 +1,23 @@
+.page-node-type-ship main {
+  margin-bottom: var(--padding);
+  padding: var(--padding);
+  background-color: var(--background-colour);
+  border-radius: var(--border-radius);
+}
+
+.page-node-type-ship .node__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-node-type-ship p {
+  max-width: 50ch;
+}
+
+@media all and (min-width: 550px) {
+  .page-node-type-ship .node__content {
+    flex-direction: row;
+    gap: 2em;
+  }
+}

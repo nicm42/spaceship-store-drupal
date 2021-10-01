@@ -1,0 +1,16 @@
+styling:
+  version: 1.0
+  css:
+    theme:
+      css/global.css: {}
+      css/nav.css: {}
+      css/frontpage.css: {}
+      css/carousel.css: {}
+      css/about.css: {}
+      css/ships.css: {}
+      css/ship-page.css: {}
+
+fonts:
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Chakra+Petch: { type: external }
