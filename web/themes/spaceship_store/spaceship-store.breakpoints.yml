@@ -1,0 +1,18 @@
+tara.mobile:
+  label: small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+tara.narrow:
+  label: medium
+  mediaQuery: 'all and (min-width: 550px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+tara.wide:
+  label: large
+  mediaQuery: 'all and (min-width: 851px)'
+  weight: 2
+  multipliers:
+    - 1x
